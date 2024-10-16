@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vampire's Blood</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+        <img src="./img/vampblood.png" class="vamp-logo" alt="Logo vampire's blood">  
+      <h1>Registre-se</h1>
+      <form id="cadastroForm">
+        <label for="nome">Nome completo:</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required />
+
+        <label for="dataNascimento">Data de nascimento:</label>
+        <input type="date" id="dataNascimento" name="dataNascimento" required />
+
+
+        <label>Gênero:</label>
+        <div class="radio-group">
+          <input
+            type="radio"
+            id="masculino"
+            name="genero"
+            value="masculino"
+            required
+          />
+          <label for="masculino">Masculino</label>
+          <input type="radio" id="feminino" name="genero" value="feminino" />
+          <label for="feminino">Feminino</label>
+          <input type="radio" id="outro" name="genero" value="outro" />
+          <label for="outro">Outro</label>
+        </div>
+
+        <label for="tipo">Tipo sanguíneo:</label>
+        <select id="tipo" name="tipo" required>
+          <option value="A positivo">A+</option>
+          <option value="A negativo">A-</option>
+          <option value="B positivo">B+</option>
+          <option value="B negativo">B-</option>
+          <option value="AB positivo">AB+</option>
+          <option value="AB negativo">AB-</option>
+          <option value="O positivo">O+</option>
+          <option value="O negativo">O-</option>
+        </select>
+
+        <label for="pais">País:</label>
+        <select id="pais" name="pais" required>
+          <option value="brasil">Brasil</option>
+          <option value="italia">Itália</option>
+          <option value="canada">Canadá</option>
+          <option value="coreia">Coréia do Sul</option>
+          <option value="franca">França</option>
+        </select>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
